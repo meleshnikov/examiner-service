@@ -1,0 +1,3 @@
+
+
+GET http://localhost:8080/exam/java/add?question=123&answer=345
