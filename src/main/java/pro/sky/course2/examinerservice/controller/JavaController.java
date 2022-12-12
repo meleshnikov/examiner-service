@@ -22,12 +22,23 @@ public class JavaController {
     @GetMapping("/add")
     Question addQuestion(@RequestParam("question") String question,
                          @RequestParam("answer") String answer) {
-        return service.add(question, answer);
+        return this.service.add(question, answer);
+    }
+
+    @GetMapping("/remove")
+    Question removeQuestion(@RequestParam("question") String question,
+                            @RequestParam("answer") String answer) {
+        return this.service.remove(question, answer);
     }
 
     @GetMapping
     Collection<Question> getQuestions() {
-        return service.getAll();
+        return this.service.getAll();
+    }
+
+    @GetMapping("/random")
+    Question getRandomQuestion() {
+        return this.service.getRandomQuestion();
     }
 
 

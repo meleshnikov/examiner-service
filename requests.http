@@ -1,3 +1,16 @@
 
+### add java question 1
+GET http://localhost:8080/exam/java/add?question=test&answer=test
 
-GET http://localhost:8080/exam/java/add?question=123&answer=345
+### add java question 2
+GET http://localhost:8080/exam/java/add?question=What is an Object?&
+    answer=An instance of a class is called an object. The object has state and behavior.
+
+### remove question
+GET http://localhost:8080/exam/java/remove?question=test&answer=test
+
+### get questions
+GET http://localhost:8080/exam/java
+
+### get 3 random questions
+GET http://localhost:8080/exam/3
